@@ -1,7 +1,8 @@
-/**
+/* 来自群友@BP999X @Aston无私分享
  * Egern widget: Subscription Traffic
  *
  * Create a Generic script with this file.
+ * 添加环境变量：
  * Required env:
 *   SUBSCRIPTION_URL=https://example.com/subscribe?token=...
  * Optional env:
