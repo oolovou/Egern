@@ -1,4 +1,4 @@
-/* 来自群友无私分享
+/* 来自群友@BP999X @Aston无私分享
  * IPPure - 节点 IP 纯净度检测
  * Egern Widget 版本
  *
