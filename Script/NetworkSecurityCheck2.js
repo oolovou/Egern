@@ -1,4 +1,4 @@
-/**
+/* 来自群友@BP999X @Aston无私分享
  * Egern widget: Network Security Check (simplified, no rule stats)
  *
  * Create a Generic script with this file, then add it in Widget Gallery.
