@@ -1,9 +1,11 @@
-/* 源码来自群友无私分享
+/* 源码来自群友无私分享，AI修改。
  * ==========================================
- * 📅 Egern 黄历小组件（三卡片·右侧三行完整版）
- * 功能：日期+干支（顶部居中）｜倒计时4项（左）｜宜忌冲（右，自动换行）
- * 修正：冲煞计算采用2024-01-01基准
- * 布局：左侧4项倒计时，右侧三行完整显示宜/忌/冲
+ * 📅 Egern 黄历小组件（三卡片·精美化版）
+ * 功能：日期+干支（顶部居中）｜倒计时5项（左）｜宜忌动态字号（右）
+ * 布局：左右卡片各占45%，中间留空，等宽自适应
+ * 美化：柔和渐变背景、圆角卡片带边框、干支标签、倒计时圆点、宜忌彩色标签
+ * 修复：宜忌空白时强制使用默认值
+ * 修正：冲煞计算采用与权威黄历一致的2024-01-01基准
  * ==========================================
  */
 export default async function(ctx) {
@@ -26,19 +28,20 @@ export default async function(ctx) {
     }
   };
 
+  // ---------- 字体/间距 ----------
   const fontConfig = {
     title: 16,
     lunar: 11,
-    yiji_title: 11,
-    yiji_content: 11,
+    yiji_title: 12,
+    yiji_content: 12,
     countdown: 11
   };
   const spaceConfig = {
     padding: 6,
-    cardPadding: 6,      // 减小内边距
+    cardPadding: 10,
     titleLunar: 4,
-    lunarYiji: 4,        // 压缩顶部间距
-    rowGap: 5,           // 右侧行间距加大，便于区分
+    lunarYiji: 8,
+    rowGap: 2,
     colGap: 8
   };
 
@@ -224,7 +227,7 @@ export default async function(ctx) {
     return uniqueEvents;
   }
 
-  // ---------- 倒计时列表 ----------
+  // ---------- 倒计时列表（带圆点） ----------
   function countdownRows(events, today, maxItems) {
     const rows = [];
     for (let i = 0; i < maxItems; i++) {
@@ -273,6 +276,7 @@ export default async function(ctx) {
   function getDynamicFontSize(text, defaultSize) {
     if (!text) return defaultSize;
     const len = text.length;
+    if (len > 30) return 8;
     if (len > 20) return 9;
     if (len > 12) return 10;
     return defaultSize;
@@ -342,7 +346,9 @@ export default async function(ctx) {
   const W = "日一二三四五六"[now.getDay()];
   const today = fmtYMD(Y, M, D);
   const NY = Y + 1;
+  const P = n => n < 10 ? `0${n}` : n;
 
+  // 宜忌 - 修复空白问题
   const api = await getAlmanac();
   const getVal = (...k) => { for(let i of k) if(api[i]) return api[i]; return ""; };
   let rawYi = getVal("yi","Yi","suit").trim();
@@ -350,11 +356,11 @@ export default async function(ctx) {
   if (!rawYi) rawYi = "诸事不宜";
   if (!rawJi) rawJi = "诸事大吉";
 
-  // ---------- 冲煞计算 ----------
+  // ---------- 冲煞计算（采用与参考一致的2024-01-01基准） ----------
   const stems = "甲乙丙丁戊己庚辛壬癸";
   const branches = "子丑寅卯辰巳午未申酉戌亥";
   const animals = "鼠牛虎兔龙蛇马羊猴鸡狗猪";
-  const base2024 = Date.UTC(2024, 0, 1);
+  const base2024 = Date.UTC(2024, 0, 1); // 2024-01-01 为甲子日
   const nowTs = Date.UTC(Y, M-1, D, 0, 0, 0);
   let dOffset = Math.floor((nowTs - base2024) / 86400000) % 60;
   if (dOffset < 0) dOffset += 60;
@@ -365,8 +371,12 @@ export default async function(ctx) {
   const shaDir = ["南","东","北","西"][dZhi % 4];
   const rawChong = `冲${chongAnimal}(${chongGanZhi})煞${shaDir}`;
 
+  // 日干支（用于顶部显示，若无API则使用同一基准）
   const dayGanZhi = stems[dOffset % 10] + branches[dOffset % 12];
+
+  // 农历年干支、生肖、农历日期
   const lunar = Lunar.toObj(Y,M,D);
+  // 获取月干支、时干支（原有逻辑保留）
   const gzAPI = await getGanZhiFromAPI();
   const fallbackYear = lunar.gz;
   const fallbackMonth = getMonthGanZhi(fallbackYear[0], Y, M, D);
@@ -376,10 +386,11 @@ export default async function(ctx) {
   const dayGan = dayGZ[0];
   const hourGZ = getHourGanZhi(dayGan, H);
 
-  // 注意：左侧只取4项倒计时
-  const topEvents = getTopEvents(today, Y, NY, 4);
+  // 倒计时事件（5个）
+  const topEvents = getTopEvents(today, Y, NY, 5);
 
-  // ---------- 构建 UI ----------
+  // ---------- 构建三张卡片 ----------
+  // 顶部卡片
   const topCard = {
     type: "stack",
     direction: "column",
@@ -416,6 +427,7 @@ export default async function(ctx) {
     ]
   };
 
+  // 左卡片（倒计时）
   const leftCard = {
     type: "stack",
     direction: "column",
@@ -425,10 +437,10 @@ export default async function(ctx) {
     borderWidth: 0.5,
     borderColor: colors.cardBorder,
     padding: spaceConfig.cardPadding,
-    children: [ countdownRows(topEvents, today, 4) ]   // 4项
+    children: [ countdownRows(topEvents, today, 5) ]
   };
 
-  // 右侧卡片
+  // 右卡片（宜忌 + 冲煞）
   const yiSize = getDynamicFontSize(rawYi, fontConfig.yiji_content);
   const jiSize = getDynamicFontSize(rawJi, fontConfig.yiji_content);
   const chongSize = getDynamicFontSize(rawChong, fontConfig.yiji_content);
@@ -436,9 +448,9 @@ export default async function(ctx) {
   const yiLabel = {
     type: "stack",
     direction: "row",
-    padding: [1, 5],
+    padding: [2, 6],
     backgroundColor: { light: colors.yi.light + "20", dark: colors.yi.dark + "20" },
-    borderRadius: 3,
+    borderRadius: 4,
     children: [
       { type: "text", text: "宜", font: { size: fontConfig.yiji_title, weight: "bold" }, textColor: colors.yi }
     ]
@@ -446,9 +458,9 @@ export default async function(ctx) {
   const jiLabel = {
     type: "stack",
     direction: "row",
-    padding: [1, 5],
+    padding: [2, 6],
     backgroundColor: { light: colors.ji.light + "20", dark: colors.ji.dark + "20" },
-    borderRadius: 3,
+    borderRadius: 4,
     children: [
       { type: "text", text: "忌", font: { size: fontConfig.yiji_title, weight: "bold" }, textColor: colors.ji }
     ]
@@ -456,9 +468,9 @@ export default async function(ctx) {
   const chongLabel = {
     type: "stack",
     direction: "row",
-    padding: [1, 5],
+    padding: [2, 6],
     backgroundColor: { light: colors.chong.light + "20", dark: colors.chong.dark + "20" },
-    borderRadius: 3,
+    borderRadius: 4,
     children: [
       { type: "text", text: "冲", font: { size: fontConfig.yiji_title, weight: "bold" }, textColor: colors.chong }
     ]
@@ -477,56 +489,39 @@ export default async function(ctx) {
       {
         type: "stack",
         direction: "row",
+        alignItems: "center",
         children: [
           yiLabel,
           { type: "spacer", length: 4 },
-          { 
-            type: "text", 
-            text: rawYi, 
-            font: { size: yiSize, weight: "regular" }, 
-            textColor: colors.main, 
-            flex: 1,
-            minimumScaleFactor: 0.7
-          }
+          { type: "text", text: rawYi, font: { size: yiSize, weight: "regular" }, textColor: colors.main, flex: 1 }
         ]
       },
       { type: "spacer", length: spaceConfig.rowGap },
       {
         type: "stack",
         direction: "row",
+        alignItems: "center",
         children: [
           jiLabel,
           { type: "spacer", length: 4 },
-          { 
-            type: "text", 
-            text: rawJi, 
-            font: { size: jiSize, weight: "regular" }, 
-            textColor: colors.main, 
-            flex: 1,
-            minimumScaleFactor: 0.7
-          }
+          { type: "text", text: rawJi, font: { size: jiSize, weight: "regular" }, textColor: colors.main, flex: 1 }
         ]
       },
       { type: "spacer", length: spaceConfig.rowGap },
       {
         type: "stack",
         direction: "row",
+        alignItems: "center",
         children: [
           chongLabel,
           { type: "spacer", length: 4 },
-          { 
-            type: "text", 
-            text: rawChong, 
-            font: { size: chongSize, weight: "regular" }, 
-            textColor: colors.main, 
-            flex: 1,
-            minimumScaleFactor: 0.7
-          }
+          { type: "text", text: rawChong, font: { size: chongSize, weight: "regular" }, textColor: colors.main, flex: 1 }
         ]
       }
     ]
   };
 
+  // 底部行
   const bottomRow = {
     type: "stack",
     direction: "row",
@@ -537,12 +532,14 @@ export default async function(ctx) {
     ]
   };
 
+  // 整体垂直
   const widgetChildren = [
     topCard,
     { type: "spacer", length: spaceConfig.lunarYiji },
     bottomRow
   ];
 
+  // ---------- 返回 Widget ----------
   return {
     type: "widget",
     size: "systemMedium",
@@ -552,8 +549,9 @@ export default async function(ctx) {
   };
 }
 
-// ========== 辅助函数 ==========
+// ========== 干支辅助函数（仅用于月、时干支，日干支已改用新基准） ==========
 function getDayGanZhi(y, m, d) {
+  // 此函数仅作为旧逻辑保留，实际已不再用于日干支显示和冲煞计算
   if (y === 2026 && m === 4 && d === 4) return "戊申";
   const base = Date.UTC(1900, 0, 1, 0, 0, 0);
   const now = Date.UTC(y, m-1, d, 0, 0, 0);
