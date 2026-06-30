@@ -1,27 +1,21 @@
-// ProtectionStats.js
-// 统计 Egern 配置中所有规则（包括 rule_set 和直接规则）的策略分布
+/**
+ * Egern widget: Rule Protection Statistics
+ * Counts rules with REJECT/REJECT-DROP/REJECT-NO-DROP policies.
+ *
+ * Optional env:
+ *   SHOW_DETAILS=true  - show full breakdown in widget (default false)
+ */
 
-function getRuleStats() {
-    let rules = [];
-    // 尝试从 $config 获取规则列表（Egern 常见 API）
-    if (typeof $config !== 'undefined' && $config.rules) {
-        rules = $config.rules;
-    } else {
-        // 备用：如果 $config 不可用，尝试 $rules（部分版本）
-        if (typeof $rules !== 'undefined' && Array.isArray($rules)) {
-            rules = $rules;
-        } else {
-            // 若均不可用，返回错误信息
-            return null;
-        }
-    }
+const RULE_KEY = 'egern.rule-stats'; // not used for storage, just placeholder
 
-    let total = rules.length;
+function countRules(rules) {
+    let total = 0;
     let reject = 0, rejectDrop = 0, rejectNoDrop = 0;
     let direct = 0, proxy = 0, other = 0;
 
-    rules.forEach(rule => {
-        let policy = (rule.policy || '').toUpperCase();
+    (rules || []).forEach(rule => {
+        total++;
+        const policy = (rule.policy || '').toUpperCase();
         if (policy.startsWith('REJECT-DROP')) {
             rejectDrop++;
         } else if (policy.startsWith('REJECT-NO-DROP')) {
@@ -40,26 +34,63 @@ function getRuleStats() {
     return { total, reject, rejectDrop, rejectNoDrop, direct, proxy, other };
 }
 
-// 执行统计
-let stats = getRuleStats();
-if (stats === null) {
-    $done({
-        content: '⚠️ 无法获取规则列表',
-        icon: 'xmark.circle'
-    });
-} else {
-    let protection = stats.reject + stats.rejectDrop + stats.rejectNoDrop;
-    let content = `🛡️ 防护规则: ${protection}\n` +
-                  `📊 总计规则: ${stats.total}\n` +
-                  `🚫 REJECT: ${stats.reject}\n` +
-                  `🗑️ REJECT-DROP: ${stats.rejectDrop}\n` +
-                  `⛔ REJECT-NO-DROP: ${stats.rejectNoDrop}\n` +
-                  `➡️ DIRECT: ${stats.direct}\n` +
-                  `🌐 PROXY: ${stats.proxy}\n` +
-                  `📦 其他: ${stats.other}`;
+function formatContent(stats, showDetails) {
+    const protection = stats.reject + stats.rejectDrop + stats.rejectNoDrop;
+    let lines = [
+        `🛡️ 防护: ${protection}`,
+        `📊 总计: ${stats.total}`
+    ];
+    if (showDetails) {
+        lines.push(
+            `🚫 REJECT: ${stats.reject}`,
+            `🗑️ DROP: ${stats.rejectDrop}`,
+            `⛔ NO-DROP: ${stats.rejectNoDrop}`,
+            `➡️ DIRECT: ${stats.direct}`,
+            `🌐 PROXY: ${stats.proxy}`,
+            `📦 其他: ${stats.other}`
+        );
+    }
+    return lines.join('\n');
+}
 
-    $done({
-        content: content,
-        icon: 'shield.fill' // 可选 SF Symbol 名称
-    });
+export default async function(ctx) {
+    try {
+        let rules = [];
+        // Try multiple ways to get the rule list
+        if (ctx.rules && Array.isArray(ctx.rules)) {
+            rules = ctx.rules;
+        } else if (ctx.config && ctx.config.rules && Array.isArray(ctx.config.rules)) {
+            rules = ctx.config.rules;
+        } else if (typeof $config !== 'undefined' && $config.rules && Array.isArray($config.rules)) {
+            rules = $config.rules;
+        } else if (typeof $rules !== 'undefined' && Array.isArray($rules)) {
+            rules = $rules;
+        } else {
+            // Fallback: try to get from global `rules` (if any)
+            if (typeof rules !== 'undefined' && Array.isArray(rules)) {
+                rules = rules;
+            }
+        }
+
+        if (!rules || rules.length === 0) {
+            return {
+                content: '⚠️ 未找到规则列表（可能为空）',
+                icon: 'exclamationmark.triangle'
+            };
+        }
+
+        const stats = countRules(rules);
+        const showDetails = ctx.env?.SHOW_DETAILS === 'true';
+        const content = formatContent(stats, showDetails);
+
+        return {
+            content: content,
+            icon: 'shield.fill'
+        };
+    } catch (e) {
+        return {
+            content: '❌ 错误: ' + e.message,
+            icon: 'xmark.octagon'
+        };
+    }
 }
