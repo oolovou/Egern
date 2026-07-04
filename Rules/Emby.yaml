@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 191
+# 规则统计: 192
 
 no_resolve: true
 domain_set:
@@ -195,3 +195,4 @@ domain_suffix_set:
   - xueshan.liminalnet.com
   - link00.okemby.org
   - link01.okemby.org
+  - emby.hutaoindex.com
