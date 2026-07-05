@@ -1,5 +1,5 @@
 # 规则名称: Unbreak
-# 规则统计: 51
+# 规则统计: 52
 
 domain_set:
   - ad.10010.com
@@ -53,5 +53,6 @@ domain_suffix_set:
   - tracking-protection.cdn.mozilla.net
   - upaiyun.com
   - eemby.cc.cd
+  - emby2.sadchicktv.com
 domain_keyword_set:
   - wb_ad
