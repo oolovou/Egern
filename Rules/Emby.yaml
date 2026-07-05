@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 195
+# 规则统计: 196
 
 no_resolve: true
 domain_set:
@@ -192,6 +192,7 @@ domain_suffix_set:
   - shsiis.cloudfisher.cc
   - link00.yyssr.org
   - caop.zzm.li
+  - eb.zzm.li
   - xueshan.liminalnet.com
   - link00.okemby.org
   - link01.okemby.org
