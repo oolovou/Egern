@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 197
+# 规则统计: 198
 
 no_resolve: true
 domain_set:
@@ -198,6 +198,7 @@ domain_suffix_set:
   - kkp.zhezhi.art
   - cdn.zhezhi.art
   - emby.sadchicktv.com
+  - stream-1.sadchicktv.com
   - cf.emby.fan
   - od.emby.fan
   - emby101.origamiart.uk
