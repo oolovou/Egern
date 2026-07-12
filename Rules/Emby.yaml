@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 198
+# 规则统计: 197
 
 no_resolve: true
 domain_set:
@@ -200,5 +200,4 @@ domain_suffix_set:
   - emby.sadchicktv.com
   - stream-1.sadchicktv.com
   - cf.emby.fan
-  - od.emby.fan
   - emby101.origamiart.uk
