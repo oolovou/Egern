@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 201
+# 规则统计: 203
 
 no_resolve: true
 domain_set:
@@ -205,3 +205,5 @@ domain_suffix_set:
   - sg.gxwplay.com
   - us.gxwplay.com
   - media.echoflix.de
+  - emby-npo.hohai.eu.org
+  - emby-pro.hohai.eu.org
