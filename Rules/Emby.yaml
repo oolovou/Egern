@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 203
+# 规则统计: 204
 
 no_resolve: true
 domain_set:
@@ -202,8 +202,9 @@ domain_suffix_set:
   - cf.emby.fan
   - emby101.origamiart.uk
   - emby.echoflix.de
-  - *.gxwplay.com
   - media.echoflix.de
+  - *.gxwpxlay.com
   - emby-npo.hohai.eu.org
   - emby-pro.hohai.eu.org
   - emby-ct.hohai.eu.org
+  - emby.di0.uk
