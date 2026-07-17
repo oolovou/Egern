@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 202
+# 规则统计: 203
 
 no_resolve: true
 domain_set:
@@ -206,3 +206,4 @@ domain_suffix_set:
   - media.echoflix.de
   - emby-npo.hohai.eu.org
   - emby-pro.hohai.eu.org
+  - emby-ct.hohai.eu.org
