@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 206
+# 规则统计: 207
 
 no_resolve: true
 domain_set:
@@ -210,3 +210,4 @@ domain_suffix_set:
   - gxwplay.com
   - sg.gxwplay.com
   - us.gxwplay.com
+  - feimu.tv
