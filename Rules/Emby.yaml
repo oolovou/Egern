@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 209
+# 规则统计: 211
 
 no_resolve: true
 domain_set:
@@ -213,3 +213,5 @@ domain_suffix_set:
   - emby.bangumi.ca
   - ap-cn01.emby.bangumi.ca
   - ap-cn02.emby.bangumi.ca
+  - lunarisvault.com
+  - lunarisvault.vip
