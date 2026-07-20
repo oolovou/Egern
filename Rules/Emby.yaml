@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 207
+# 规则统计: 209
 
 no_resolve: true
 domain_set:
@@ -211,3 +211,5 @@ domain_suffix_set:
   - sg.gxwplay.com
   - us.gxwplay.com
   - emby.bangumi.ca
+  - ap-cn01.emby.bangumi.ca
+  - ap-cn02.emby.bangumi.ca
