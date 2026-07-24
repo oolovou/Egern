@@ -1,4 +1,4 @@
-# RuleCount：11
+# RuleCount：10
 DOMAIN-SUFFIX, eemby.cc.cd
 DOMAIN-SUFFIX, emby2.sadchicktv.com
 DOMAIN-SUFFIX, sbz.mac89.com
@@ -8,4 +8,4 @@ DOMAIN-SUFFIX, feimu.tv
 DOMAIN-SUFFIX, lunarisvault.com
 DOMAIN-SUFFIX, emby.wawajiao.cc.cd
 DOMAIN-SUFFIX, ykj-eos-wx2-01.eos-wuxi-3.cmecloud.cn
-IP-CIDR, 45.82.56.226, no-resolve
+IP-CIDR, 45.82.56.226/32, no-resolve
