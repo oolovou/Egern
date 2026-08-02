@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 215
+# 规则统计: 216
 
 no_resolve: true
 domain_set:
@@ -219,3 +219,4 @@ domain_suffix_set:
   - video.emos.best
   - nay.007.us.kg
   - airplane.nubebelle.com
+  - us.aemby.de
