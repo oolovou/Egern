@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 216
+# 规则统计: 217
 
 no_resolve: true
 domain_set:
@@ -220,3 +220,4 @@ domain_suffix_set:
   - nay.007.us.kg
   - airplane.nubebelle.com
   - us.aemby.de
+  - emby.snowstorm.cc.cd
