@@ -1,4 +1,4 @@
-# RuleCount：11
+# RuleCount：12
 DOMAIN-SUFFIX, eemby.cc.cd
 DOMAIN-SUFFIX, emby2.sadchicktv.com
 DOMAIN-SUFFIX, sbz.mac89.com
@@ -10,4 +10,5 @@ DOMAIN-SUFFIX, emby.wawajiao.cc.cd
 DOMAIN-SUFFIX, yy.eoos.lol
 DOMAIN-SUFFIX, ykj-eos-wx2-01.eos-wuxi-3.cmecloud.cn
 DOMAIN-SUFFIX, ykj-eos-dg5-01.eos-dongguan-6.cmecloud.cn
+DOMAIN-SUFFIX, gxwplay.com
 IP-CIDR,45.82.56.226/32
