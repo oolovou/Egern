@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 217
+# 规则统计: 218
 
 no_resolve: true
 domain_set:
@@ -221,3 +221,4 @@ domain_suffix_set:
   - airplane.nubebelle.com
   - us.aemby.de
   - emby.snowstorm.cc.cd
+  - emby.teawaya.com
