@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 217
+# 规则统计: 229
 
 no_resolve: true
 domain_set:
@@ -198,6 +198,7 @@ domain_suffix_set:
   - kkp.zhezhi.art
   - cdn.zhezhi.art
   - emby.sadchicktv.com
+  - emby2.sadchicktv.com
   - stream-1.sadchicktv.com
   - cf.emby.fan
   - emby101.origamiart.uk
@@ -207,11 +208,12 @@ domain_suffix_set:
   - emby-pro.hohai.eu.org
   - emby-ct.hohai.eu.org
   - emby.di0.uk
+  - gxwplay.com
+  - eu.gxwplay.com
   - sg.gxwplay.com
   - us.gxwplay.com
   - proxy-sg.gxwplay.com
   - proxy-us.gxwplay.com
-  - eu.gxwplay.com
   - emby.bangumi.ca
   - ap-cn01.emby.bangumi.ca
   - ap-cn02.emby.bangumi.ca
@@ -221,3 +223,13 @@ domain_suffix_set:
   - us.aemby.de
   - emby.snowstorm.cc.cd
   - emby.teawaya.com
+  - eemby.cc.cd
+  - sbz.mac89.com
+  - od.emby.fan
+  - cdn.feimu.tv
+  - feimu.tv
+  - lunarisvault.com
+  - emby.wawajiao.cc.cd
+  - yy.eoos.lol
+  - ykj-eos-wx2-01.eos-wuxi-3.cmecloud.cn
+  - ykj-eos-dg5-01.eos-dongguan-6.cmecloud.cn
