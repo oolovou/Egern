@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 231
+# 规则统计: 232
 
 no_resolve: true
 domain_set:
@@ -235,3 +235,4 @@ domain_suffix_set:
   - yy.eoos.lol
   - ykj-eos-wx2-01.eos-wuxi-3.cmecloud.cn
   - ykj-eos-dg5-01.eos-dongguan-6.cmecloud.cn
+  - webdav.echos.cc.cd
