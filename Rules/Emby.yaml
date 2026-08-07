@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 230
+# 规则统计: 231
 
 no_resolve: true
 domain_set:
@@ -219,6 +219,7 @@ domain_suffix_set:
   - ap-cn01.emby.bangumi.ca
   - ap-cn02.emby.bangumi.ca
   - video.emos.best
+  - store-emos-1.emosstore.sbs
   - nay.007.us.kg
   - airplane.nubebelle.com
   - us.aemby.de
