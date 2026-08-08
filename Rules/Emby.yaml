@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 232
+# 规则统计: 235
 
 no_resolve: true
 domain_set:
@@ -236,3 +236,6 @@ domain_suffix_set:
   - ykj-eos-wx2-01.eos-wuxi-3.cmecloud.cn
   - ykj-eos-dg5-01.eos-dongguan-6.cmecloud.cn
   - webdav.echos.cc.cd
+  - test.inemby.us.ci
+  - eo.inemby.us.ci
+  - esa.inemby.us.ci
