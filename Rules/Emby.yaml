@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 239
+# 规则统计: 235
 
 no_resolve: true
 domain_set:
@@ -209,16 +209,12 @@ domain_suffix_set:
   - emby-pro.hohai.eu.org
   - emby-ct.hohai.eu.org
   - emby.di0.uk
-  - gxwplay.com
+  - gxwplay.top
   - zxngw-direct.gxwplay.top
-  - eu.gxwplay.com
-  - eu-proxy.gxwplay.com
-  - sg.gxwplay.com
+  - gxwplay.com
   - sg-proxy.gxwplay.com
-  - us.gxwplay.com
+  - eu-proxy.gxwplay.com
   - us-proxy.gxwplay.com
-  - proxy-sg.gxwplay.com
-  - proxy-us.gxwplay.com
   - emby.bangumi.ca
   - ap-cn01.emby.bangumi.ca
   - ap-cn02.emby.bangumi.ca
