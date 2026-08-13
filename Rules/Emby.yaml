@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 235
+# 规则统计: 236
 
 no_resolve: true
 domain_set:
@@ -208,6 +208,7 @@ domain_suffix_set:
   - emby-npo.hohai.eu.org
   - emby-pro.hohai.eu.org
   - emby-ct.hohai.eu.org
+  - 115.hohai.eu.org
   - emby.di0.uk
   - gxwplay.top
   - zxngw-direct.gxwplay.top
