@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 242
+# 规则统计: 244
 
 no_resolve: true
 domain_set:
@@ -233,8 +233,10 @@ domain_suffix_set:
   - feimu.tv
   - lunarisvault.com
   - emby.wawajiao.cc.cd
+  - eoos.lol
   - yy.eoos.lol
   - www.eoos.top
+  - cdn.mm880.xyz
   - ykj-eos-wx2-01.eos-wuxi-3.cmecloud.cn
   - ykj-eos-dg5-01.eos-dongguan-6.cmecloud.cn
   - webdav.echos.cc.cd
