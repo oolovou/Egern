@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 241
+# 规则统计: 242
 
 no_resolve: true
 domain_set:
@@ -234,6 +234,7 @@ domain_suffix_set:
   - lunarisvault.com
   - emby.wawajiao.cc.cd
   - yy.eoos.lol
+  - www.eoos.top
   - ykj-eos-wx2-01.eos-wuxi-3.cmecloud.cn
   - ykj-eos-dg5-01.eos-dongguan-6.cmecloud.cn
   - webdav.echos.cc.cd
