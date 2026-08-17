@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 244
+# 规则统计: 245
 
 no_resolve: true
 domain_set:
@@ -248,3 +248,4 @@ domain_suffix_set:
   - lyj.ysz.dpdns.org
   - cdn.605305.xyz
   - reverse.605305.xyz
+  - luxrealm.liminalnet.us
