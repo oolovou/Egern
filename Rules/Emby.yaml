@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 245
+# 规则统计: 246
 
 no_resolve: true
 domain_set:
@@ -249,3 +249,4 @@ domain_suffix_set:
   - cdn.605305.xyz
   - reverse.605305.xyz
   - luxrealm.liminalnet.us
+  - stream.yue.to
