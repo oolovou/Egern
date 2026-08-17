@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 246
+# 规则统计: 245
 
 no_resolve: true
 domain_set:
@@ -12,7 +12,6 @@ domain_set:
   - starharn.nebula-media.org
   - web-starharn.nebula-media.org
   - web.nebula-media.org
-  - sub.us.52lyh.top
 domain_suffix_set:
   - 114514.quest
   - 123456.al
