@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 245
+# 规则统计: 246
 
 no_resolve: true
 domain_set:
@@ -235,6 +235,7 @@ domain_suffix_set:
   - eoos.lol
   - yy.eoos.lol
   - www.eoos.top
+  - 302.eoos.top
   - cdn.mm880.xyz
   - ykj-eos-wx2-01.eos-wuxi-3.cmecloud.cn
   - ykj-eos-dg5-01.eos-dongguan-6.cmecloud.cn
