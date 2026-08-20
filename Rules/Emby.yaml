@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 259
+# 规则统计: 260
 
 no_resolve: true
 domain_set:
@@ -257,6 +257,7 @@ domain_suffix_set:
   - media3.micu.hk
   - tv.micu.hk
   - v110.micu.hk
+  - v120.micu.hk
   - emby.bbqwq.com
   - cf.sfcj.org
   - media.emby.pro
