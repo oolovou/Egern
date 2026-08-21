@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 260
+# 规则统计: 261
 
 no_resolve: true
 domain_set:
@@ -264,4 +264,5 @@ domain_suffix_set:
   - y.emby.pro
   - h.emby.pro
   - 123-cdn.dayxg.com
+  - wcf.3msky.com
 
