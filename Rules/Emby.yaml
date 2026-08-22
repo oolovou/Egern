@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 261
+# 规则统计: 263
 
 no_resolve: true
 domain_set:
@@ -238,8 +238,10 @@ domain_suffix_set:
   - 302.eoos.top
   - emoss.eeew.eu.org
   - cdn.mm880.xyz
-  - ykj-eos-wx2-01.eos-wuxi-3.cmecloud.cn
-  - ykj-eos-dg5-01.eos-dongguan-6.cmecloud.cn
+  - emby.yusen.cc.cd
+  - embya.yusen.cyou
+  - emby.yusen.us.ci
+  - aaa.yusen6.ccwu.cc
   - webdav.echos.cc.cd
   - test.inemby.us.ci
   - eo.inemby.us.ci
