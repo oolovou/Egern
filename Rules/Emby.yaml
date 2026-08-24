@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 263
+# 规则统计: 267
 
 no_resolve: true
 domain_set:
@@ -243,9 +243,13 @@ domain_suffix_set:
   - emby.yusen.us.ci
   - aaa.yusen6.ccwu.cc
   - webdav.echos.cc.cd
+  - inemby.us.ci
   - test.inemby.us.ci
+  - test-origin.inemby.us.ci
+  - cs.inemby.us.ci
   - eo.inemby.us.ci
   - esa.inemby.us.ci
+  - b2fr.inemby.us.ci
   - emby.605305.xyz
   - ofo.033388.xyz
   - lyj.ysz.dpdns.org
@@ -267,4 +271,3 @@ domain_suffix_set:
   - h.emby.pro
   - 123-cdn.dayxg.com
   - wcf.3msky.com
-
