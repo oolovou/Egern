@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 270
+# 规则统计: 271
 
 no_resolve: true
 domain_set:
@@ -274,3 +274,4 @@ domain_suffix_set:
   - 123-cdn.dayxg.com
   - wcf.3msky.com
   - test.startspoint.com
+  - xying1314.xyz
