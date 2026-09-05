@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 271
+# 规则统计: 272
 
 no_resolve: true
 domain_set:
@@ -275,3 +275,4 @@ domain_suffix_set:
   - wcf.3msky.com
   - test.startspoint.com
   - xying1314.xyz
+  - emby.ichinosekotomi.com
