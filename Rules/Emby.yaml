@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 274
+# 规则统计: 276
 
 no_resolve: true
 domain_set:
@@ -278,3 +278,5 @@ domain_suffix_set:
   - emby.ichinosekotomi.com
   - emby.kingemby.com
   - emby.dijia.de
+  - yxrkemby.haosao.de
+  - emby.haosao.de
