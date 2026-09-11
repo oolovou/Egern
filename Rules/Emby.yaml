@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 280
+# 规则统计: 282
 
 no_resolve: true
 domain_set:
@@ -284,3 +284,5 @@ domain_suffix_set:
   - v.chilledmelon.com
   - us.697758.xyz
   - cf.697758.xyz
+  - itsmygo.tv
+  - jp.itsmygo.tv
