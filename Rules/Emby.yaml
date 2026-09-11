@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 276
+# 规则统计: 280
 
 no_resolve: true
 domain_set:
@@ -280,3 +280,7 @@ domain_suffix_set:
   - emby.dijia.de
   - yxrkemby.haosao.de
   - emby.haosao.de
+  - us.chilledmelon.com
+  - v.chilledmelon.com
+  - us.697758.xyz
+  - cf.697758.xyz
