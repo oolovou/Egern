@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 284
+# 规则统计: 285
 
 no_resolve: true
 domain_set:
@@ -288,3 +288,4 @@ domain_suffix_set:
   - jp.itsmygo.tv
   - www.yuntv.de
   - xg.yuntv.de
+  - media.wybcs.work
