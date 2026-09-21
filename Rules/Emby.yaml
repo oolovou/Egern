@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 285
+# 规则统计: 286
 
 no_resolve: true
 domain_set:
@@ -289,3 +289,4 @@ domain_suffix_set:
   - www.yuntv.de
   - xg.yuntv.de
   - media.wybcs.work
+  - gy.meowfly.de
