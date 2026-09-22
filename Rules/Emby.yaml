@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 286
+# 规则统计: 289
 
 no_resolve: true
 domain_set:
@@ -290,3 +290,6 @@ domain_suffix_set:
   - xg.yuntv.de
   - media.wybcs.work
   - gy.meowfly.de
+  - tbagemby.tbag.dpdns.org
+  - tbagemby.tbag.qzz.io
+  - tbagemby-kr.tbag.dpdns.org
