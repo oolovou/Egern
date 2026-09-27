@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 291
+# 规则统计: 292
 
 no_resolve: true
 domain_set:
@@ -296,3 +296,4 @@ domain_suffix_set:
   - emby.my
   - a.emby.my
   - speedtest-babybus.apple-cdn.net
+  - embymv.link
