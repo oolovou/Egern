@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 294
+# 规则统计: 295
 
 no_resolve: true
 domain_set:
@@ -227,6 +227,7 @@ domain_suffix_set:
   - emby.snowstorm.cc.cd
   - emby.teawaya.com
   - emby.7s.l.cd
+  - white.teawaya.com
   - eemby.cc.cd
   - sbz.mac89.com
   - od.emby.fan
