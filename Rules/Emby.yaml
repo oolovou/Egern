@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 300
+# 规则统计: 244
 
 no_resolve: true
 domain_set:
@@ -29,14 +29,12 @@ domain_suffix_set:
   - 91ai.de
   - 9521732.xyz
   - acemby.org
-  - agahk.odysseyplus.site
+  - odysseyplus.site
   - agan2.vip
-  - agasg.odysseyplus.site
   - agon.cf
   - alphatvapp.top
   - as174.de
-  - az-hk.embyclub.com
-  - azsgp.embyclub.com
+  - embyclub.com
   - baisi.pro
   - bangumi.ca
   - bddup.com
@@ -60,8 +58,7 @@ domain_suffix_set:
   - e.degyax.one
   - ednovas.org
   - em.ssky.me
-  - emby-cf.plusmedia.site
-  - emby-sg.plusmedia.site
+  - plusmedia.site
   - emby.aiyowei.ml
   - emby.bid
   - emby.cjpc.cc
@@ -89,11 +86,9 @@ domain_suffix_set:
   - emby.ssltd.xyz
   - emby.trade
   - emby.ws
-  - emby.wtf
   - emby.xeton.dev
   - emby.ytoo.li
-  - emby1.medi4.org
-  - emby2.medi4.org
+  - medi4.org
   - emby2.otakudrive.life
   - emby77.cf
   - emby77.org
@@ -150,18 +145,8 @@ domain_suffix_set:
   - poloemby.xyz
   - pololine.ml
   - pornemby.club
-  - pub1.emby.wtf
-  - pub1.term.wtf
-  - pub1back.emby.wtf
-  - pub1cf.emby.wtf
-  - pub2.emby.wtf
-  - pub2.term.wtf
-  - pub2back.emby.wtf
-  - pub2cf.emby.wtf
-  - pub3.emby.wtf
-  - pub3.term.wtf
-  - pub3back.emby.wtf
-  - pub3cf.emby.wtf
+  - emby.wtf
+  - term.wtf
   - reddust.link
   - ru.odysseyplus.site
   - servers.xeton.dev
@@ -192,116 +177,74 @@ domain_suffix_set:
   - shsiis.cloudfisher.cc
   - link00.yyssr.org
   - xueshan.liminalnet.com
-  - link00.okemby.org
-  - link01.okemby.org
+  - okemby.org
   - emby.hutaoindex.com
-  - kkp.zhezhi.art
-  - cdn.zhezhi.art
-  - emby.sadchicktv.com
-  - emby2.sadchicktv.com
-  - stream-1.sadchicktv.com
+  - zhezhi.art
+  - sadchicktv.com
   - cf.emby.fan
   - emby101.origamiart.uk
-  - emby.echoflix.de
-  - media.echoflix.de
-  - emby-npo.hohai.eu.org
-  - emby-pro.hohai.eu.org
-  - emby-ct.hohai.eu.org
-  - 115.hohai.eu.org
+  - echoflix.de
+  - hohai.eu.org
   - emby.di0.uk
   - gxwplay.top
-  - zxngw-direct.gxwplay.top
   - gxwplay.com
-  - sg-proxy.gxwplay.com
-  - eu-proxy.gxwplay.com
-  - us-proxy.gxwplay.com
   - emby.bangumi.ca
-  - ap-cn01.emby.bangumi.ca
-  - ap-cn02.emby.bangumi.ca
-  - video.emos.best
-  - store-emos-1.emosstore.sbs
-  - store-emos-2.emosstore.sbs
+  - emos.best
+  - emosstore.sbs
   - nay.007.us.kg
   - airplane.nubebelle.com
   - us.aemby.de
   - emby.snowstorm.cc.cd
-  - emby.teawaya.com
+  - teawaya.com
   - emby.7s.l.cd
-  - white.teawaya.com
   - emby.chapanda.site
   - white.chapanda.sbs
   - eemby.cc.cd
   - sbz.mac89.com
   - od.emby.fan
-  - cdn.feimu.tv
   - feimu.tv
   - lunarisvault.com
   - emby.wawajiao.cc.cd
   - eoos.lol
-  - yy.eoos.lol
-  - www.eoos.top
-  - 302.eoos.top
+  - eoos.top
   - emoss.eeew.eu.org
   - cdn.mm880.xyz
-  - emby.yusen.cc.cd
-  - embya.yusen.cyou
-  - emby.yusen.us.ci
-  - aaa.yusen6.ccwu.cc
-  - webdav.echos.cc.cd
+  - yusen.cc.cd
+  - yusen.cyou
+  - yusen.us.ci
+  - yusen6.ccwu.cc
+  - echos.cc.cd
   - inemby.us.ci
-  - test.inemby.us.ci
-  - test-origin.inemby.us.ci
-  - cs.inemby.us.ci
-  - eo.inemby.us.ci
-  - esa.inemby.us.ci
-  - b2fr.inemby.us.ci
-  - emby.605305.xyz
   - ofo.033388.xyz
   - lyj.ysz.dpdns.org
-  - cdn.605305.xyz
-  - reverse.605305.xyz
+  - 605305.xyz
   - luxrealm.liminalnet.us
   - stream.yue.to
-  - media.micu.hk
-  - media1.micu.hk
-  - media2.micu.hk
-  - media3.micu.hk
-  - tv.micu.hk
-  - v110.micu.hk
-  - v120.micu.hk
+  - micu.hk
   - emby.bbqwq.com
   - cf.sfcj.org
-  - media.emby.pro
-  - y.emby.pro
-  - h.emby.pro
+  - emby.pro
   - 123-cdn.dayxg.com
   - gcf.betop.uk
   - test.startspoint.com
   - xying1314.xyz
   - emby.ichinosekotomi.com
-  - emby.kingemby.com
-  - emby.dijia.de
-  - yxrkemby.haosao.de
-  - emby.haosao.de
-  - us.chilledmelon.com
-  - v.chilledmelon.com
-  - us.697758.xyz
-  - cf.697758.xyz
+  - kingemby.com
+  - dijia.de
+  - haosao.de
+  - chilledmelon.com
+  - 697758.xyz
   - itsmygo.tv
-  - jp.itsmygo.tv
-  - www.yuntv.de
-  - xg.yuntv.de
-  - embycc.wybcs.work
-  - ccmedia.wybcs.work
+  - yuntv.de
+  - wybcs.work
   - gy.meowfly.de
-  - tbagemby.tbag.dpdns.org
+  - tbag.dpdns.org
   - tbagemby.tbag.qzz.io
-  - tbagemby-kr.tbag.dpdns.org
   - emby.my
-  - a.emby.my
   - speedtest-babybus.apple-cdn.net
   - embymv.link
-  - xn--inrt1kowsjwjkrdbt8b.ibukifuko.tech
+  - ibukifuko.tech
   - suiying.qutama.de
   - eco.potdot.de
   - kingemby.xyz
+  - gz.kingmedia.cc.cd
