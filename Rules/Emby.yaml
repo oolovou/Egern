@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 299
+# 规则统计: 300
 
 no_resolve: true
 domain_set:
@@ -304,3 +304,4 @@ domain_suffix_set:
   - xn--inrt1kowsjwjkrdbt8b.ibukifuko.tech
   - suiying.qutama.de
   - eco.potdot.de
+  - kingemby.xyz
