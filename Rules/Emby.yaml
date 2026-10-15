@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 246
+# 规则统计: 247
 
 no_resolve: true
 domain_set:
@@ -250,3 +250,4 @@ domain_suffix_set:
   - kingemby.xyz
   - gz.kingmedia.cc.cd
   - mwyy.de
+  - dqx99999.shop
