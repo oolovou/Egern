@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 249
+# 规则统计: 252
 
 no_resolve: true
 domain_set:
@@ -253,3 +253,6 @@ domain_suffix_set:
   - mwyy.de
   - dqx99999.shop
   - cloudlite.mjji.de
+  - vipdc.covh.eu.org
+  - eb.zzm.li
+  - nl.ftp2.eu.org
