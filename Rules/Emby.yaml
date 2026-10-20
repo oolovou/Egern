@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 248
+# 规则统计: 249
 
 no_resolve: true
 domain_set:
@@ -199,6 +199,7 @@ domain_suffix_set:
   - emby.7s.l.cd
   - emby.chapanda.site
   - white.chapanda.sbs
+  - teawaya.com
   - eemby.cc.cd
   - sbz.mac89.com
   - od.emby.fan
