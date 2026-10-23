@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 254
+# 规则统计: 253
 
 no_resolve: true
 domain_set:
@@ -186,7 +186,6 @@ domain_suffix_set:
   - echoflix.de
   - hohai.eu.org
   - emby.di0.uk
-  - gxwplay.top
   - gxwplay.com
   - emby.bangumi.ca
   - emos.best
