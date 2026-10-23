@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 253
+# 规则统计: 254
 
 no_resolve: true
 domain_set:
@@ -242,6 +242,7 @@ domain_suffix_set:
   - tbag.dpdns.org
   - tbagemby.tbag.qzz.io
   - emby.my
+  - 876645.xyz
   - speedtest-babybus.apple-cdn.net
   - embymv.link
   - embymv.cc
