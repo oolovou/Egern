@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 254
+# 规则统计: 255
 
 no_resolve: true
 domain_set:
@@ -258,3 +258,4 @@ domain_suffix_set:
   - nl.ftp2.eu.org
   - media.freshippo.uno
   - drive.usercontent.google.com
+  - cdn.135505.autos
