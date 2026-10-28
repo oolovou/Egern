@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 255
+# 规则统计: 256
 
 no_resolve: true
 domain_set:
@@ -256,6 +256,7 @@ domain_suffix_set:
   - vipdc.covh.eu.org
   - eb.zzm.li
   - nl.ftp2.eu.org
+  - vip.covh.eu.org
   - media.freshippo.uno
   - drive.usercontent.google.com
   - cdn.135505.autos
