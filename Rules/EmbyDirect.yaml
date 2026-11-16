@@ -1,14 +1,19 @@
-# RuleCount：9
-DOMAIN-SUFFIX, huangmin.cc.cd
-DOMAIN-SUFFIX, cmecloud.cn
-DOMAIN-SUFFIX, guangyacdn.com
-DOMAIN-SUFFIX, 2l.585820.xyz
-DOMAIN-SUFFIX, gxwplay.top
-DOMAIN-SUFFIX, direct.embycc.wybcs.work
-DOMAIN-SUFFIX, tv.micu.hk
-DOMAIN-SUFFIX, gz.kingmedia.cc.cd
-DOMAIN-SUFFIX, svip.yuntv.de
-DOMAIN-SUFFIX, speed.yuntv.de
-DOMAIN-SUFFIX, vip.yuntv.de
-DOMAIN-SUFFIX, emos.777666888.xyz
-DOMAIN-SUFFIX, awsjp.panelio.org
+# 规则名称: EmbyDirect
+# 规则统计: 256
+
+no_resolve: true
+domain_set:
+  - huangmin.cc.cd
+  - 2l.585820.xyz
+  - direct.embycc.wybcs.work
+  - tv.micu.hk
+  - gz.kingmedia.cc.cd
+  - svip.yuntv.de
+  - vip.yuntv.de
+  - speed.yuntv.de
+  - emos.777666888.xyz
+  - awsjp.panelio.org
+domain_suffix_set:
+  - cmecloud.cn
+  - guangyacdn.com
+  - gxwplay.top
