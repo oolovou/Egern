@@ -17,9 +17,10 @@ domain_set:
   - v6.dylan.xin
   - mygo.agagag.eu.org
   - mygo2.agagag.eu.org
+  - emby101.origamiart.uk
+  - emby.9ll.kdns.fr
+  - cmwhite.embymv.cc
 domain_suffix_set:
   - cmecloud.cn
   - guangyacdn.com
   - gxwplay.top
-  - emby.9ll.kdns.fr
-  - cmwhite.embymv.cc
