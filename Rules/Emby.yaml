@@ -238,7 +238,6 @@ domain_suffix_set:
   - 876645.xyz
   - speedtest-babybus.apple-cdn.net
   - embymv.cc
-  - 89.58.30.135
   - ibukifuko.tech
   - suiying.qutama.de
   - eco.potdot.de
@@ -266,3 +265,5 @@ domain_suffix_set:
   - bdl-in.ccwu.cc
   - ccemby.eu.org
   - play.ccisp.eu.org
+ip_cidr_set:
+  - 89.58.30.135
