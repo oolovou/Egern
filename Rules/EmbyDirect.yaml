@@ -27,6 +27,7 @@ domain_set:
   - test.inemby.us.ci
   - embycc.wybcs.work
   - media.emby.pro
+  - gcf.betop.uk
 domain_suffix_set:
   - cmecloud.cn
   - guangyacdn.com
