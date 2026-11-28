@@ -23,6 +23,7 @@ domain_set:
   - cdn.zhezhi.art
   - stream-1.sadchicktv.com
   - emby.chapanda.site
+  - white.chapanda.sbs
 domain_suffix_set:
   - cmecloud.cn
   - guangyacdn.com
