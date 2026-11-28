@@ -25,6 +25,7 @@ domain_set:
   - emby.chapanda.site
   - white.chapanda.sbs
   - test.inemby.us.ci
+  - embycc.wybcs.work
 domain_suffix_set:
   - cmecloud.cn
   - guangyacdn.com
