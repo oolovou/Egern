@@ -21,6 +21,7 @@ domain_set:
   - emby.9ll.kdns.fr
   - cmwhite.embymv.cc
   - cdn.zhezhi.art
+  - stream-1.sadchicktv.com
 domain_suffix_set:
   - cmecloud.cn
   - guangyacdn.com
