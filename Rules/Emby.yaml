@@ -265,5 +265,6 @@ domain_suffix_set:
   - bdl-in.ccwu.cc
   - ccemby.eu.org
   - play.ccisp.eu.org
+  - agagag.eu.org
 ip_cidr_set:
   - 89.58.30.135
